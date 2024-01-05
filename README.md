@@ -1,2 +1,2 @@
 # APIBuilder
-A project for building API's; RESTful 
+A project for building API using NodeJS
