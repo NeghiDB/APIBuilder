@@ -4,8 +4,17 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-app.get('/',(req, res) => {
-    res.send("Hi guys");
+let users = [
+    {
+        userid: 1,
+        name: "Nosa",
+        email: "neghianruwa@ol.com",
+        phone: "07050618611",
+    },
+];
+
+app.get('/users',(req, res) => {
+    res.send(users);
 });
 
 app.listen(3000, () => {
