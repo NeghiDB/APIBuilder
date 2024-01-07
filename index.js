@@ -9,7 +9,7 @@ let users = [
         userid: 1,
         name: "Nosa",
         email: "neghianruwa@ol.com",
-        phone: "07050618611",
+        phone: "070*******1",
     },
 ];
 
@@ -19,7 +19,7 @@ app.get('/users',(req, res) => {
 app.post("/users", (req, res) => {
     const user = req.body;
     users.push(user);
-    res.send({message: "User succesfully created", user, users})
+    res.send({ message: "User succesfully created", user, users})
 })
 
 app.listen(3000, () => {
